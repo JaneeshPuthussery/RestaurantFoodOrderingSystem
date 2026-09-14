@@ -1,0 +1,81 @@
+{
+  "customers": [
+    {
+      "name": "Janeesh",
+      "phone": "9896789567",
+      "email": "janeeshputhussery@gmail.com",
+      "password": "123456",
+      "id": "VPi8pWSUx1Y"
+    },
+    {
+      "name": "Arun",
+      "phone": "9898956781",
+      "email": "Arun@gmail.com",
+      "password": "123",
+      "id": "vWdlrnoplJM"
+    }
+  ],
+  "foodItems": [
+    {
+      "id": "1",
+      "foodName": "Burger",
+      "price": 110,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=240&q=80"
+    },
+    {
+      "id": "2",
+      "foodName": "Pizza",
+      "price": 150,
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=240&q=80"
+    },
+    {
+      "id": "3",
+      "foodName": "Chicken Biryani",
+      "price": 180,
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=240&q=80"
+    },
+    {
+      "id": "4",
+      "foodName": "Fried Rice",
+      "price": 140,
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=240&q=80"
+    },
+    {
+      "foodName": "Mutton Biryani",
+      "price": 250,
+      "id": "_YelUZwkMpk",
+      "image": "https://images.unsplash.com/photo-1631515242808-497c3fbd3972?auto=format&fit=crop&w=240&q=80"
+    },
+    {
+      "foodName": "Masala Dosa",
+      "price": 80,
+      "id": "uDtZPSOXZk8",
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=240&q=80"
+    },
+    {
+      "foodName": "Steamed Momos",
+      "price": 120,
+      "image": "https://4.bp.blogspot.com/-BD6z0rLHgCQ/VBlZyMzRbdI/AAAAAAAAAL4/oAc_IiFGUyM/s1600/Veg-momos.jpg",
+      "id": "ZEN85i5nMVc"
+    }
+  ],
+  "Orders": [
+    {
+      "id": "sSRzBcwrddQ",
+      "cid": "VPi8pWSUx1Y",
+      "orderitems": [
+        1
+      ],
+      "orderdatetime": "2026-09-14T06:48:36.486Z"
+    },
+    {
+      "id": "hd-QHgSQvbw",
+      "cid": "VPi8pWSUx1Y",
+      "orderitems": [
+        2
+      ],
+      "orderdatetime": "2026-09-14T06:48:38.710Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
