@@ -45,8 +45,8 @@ function loadFoodItems(){
               <span class="text-muted">₹${item.price}</span>
             </div>
             <div class="d-flex gap-2">
-              <button class="btn btn-sm btn-outline-primary" onclick="updateFood(${item.id})">Update</button>
-              <button class="btn btn-sm btn-outline-danger" onclick="deleteFood(${item.id})">Delete</button>
+              <button class="btn btn-sm btn-outline-primary" onclick="updateFood('${item.id}')">Update</button>
+              <button class="btn btn-sm btn-outline-danger" onclick="deleteFood('${item.id}')">Delete</button>
             </div>
           </div>
         `;
