@@ -25,7 +25,7 @@
     {
       "id": "2",
       "foodName": "Pizza",
-      "price": 150,
+      "price": 200,
       "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=240&q=80"
     },
     {
@@ -57,6 +57,18 @@
       "price": 120,
       "image": "https://4.bp.blogspot.com/-BD6z0rLHgCQ/VBlZyMzRbdI/AAAAAAAAAL4/oAc_IiFGUyM/s1600/Veg-momos.jpg",
       "id": "ZEN85i5nMVc"
+    },
+    {
+      "foodName": "Chicken Noodles",
+      "price": 250,
+      "image": "https://wallpaperaccess.com/full/10583557.jpg",
+      "id": "fyVNFSj2l08"
+    },
+    {
+      "foodName": "Chicken Fry",
+      "price": 250,
+      "image": "https://www.licious.in/blog/wp-content/uploads/2022/05/shutterstock_1587847900.jpg",
+      "id": "6f-5aK7921g"
     }
   ],
   "Orders": [

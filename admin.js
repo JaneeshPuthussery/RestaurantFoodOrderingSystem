@@ -21,9 +21,16 @@ if (addFoodForm) {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify(food)
-    }).then(() => {
+    }).then(response => {
+      if (!response.ok) throw new Error("Food item could not be added");
+
       addFoodForm.reset();
       loadFoodItems();
+      const foodMessage = document.getElementById("foodMessage");
+      foodMessage.removeAttribute("hidden");
+    }).catch(error => {
+      console.error(error);
+      alert("Unable to add the food item. Please try again.");
     });
   });
 }
@@ -62,14 +69,30 @@ function updateFood(id){
       method: "PATCH",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({ price: Number(newPrice) })
-    }).then(() => loadFoodItems());
+    }).then(response => {
+      if (!response.ok) throw new Error("Food item could not be updated");
+
+      loadFoodItems();
+      document.getElementById("updateMessage").removeAttribute("hidden");
+    }).catch(error => {
+      console.error(error);
+      alert("Unable to update the food item. Please try again.");
+    });
   }
 }
 
 // Delete food
 function deleteFood(id){
   fetch("http://localhost:3000/foodItems/" + id, { method: "DELETE" })
-    .then(() => loadFoodItems());
+    .then(response => {
+      if (!response.ok) throw new Error("Food item could not be deleted");
+
+      loadFoodItems();
+      document.getElementById("deleteMessage").removeAttribute("hidden");
+    }).catch(error => {
+      console.error(error);
+      alert("Unable to delete the food item. Please try again.");
+    });
 }
 
 let allCustomers = [];
